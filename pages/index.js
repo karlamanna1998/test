@@ -26,6 +26,7 @@ export async function getStaticProps() {
   try{
     const res = await fetch('https://api.github.com/repos/vercel/next.js')
     const repo = await res.json()
+    console.log("data fetched");
     return { props: { repo } }
   }catch(err){
     console.log("failed to get static props");
