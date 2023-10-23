@@ -16,6 +16,7 @@ export default function Home({repo}) {
       <main >
         <h1>home</h1>
         <h2> "subscribers_count" {repo.subscribers_count}</h2>
+        <h3>new data</h3>
       </main>
     </>
   )
